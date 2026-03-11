@@ -1,0 +1,154 @@
+﻿.modal-box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    z-index: 99998;
+    display: none;
+    font-family: Tahoma, Arial;
+}
+.v-center {
+    width: 100%;
+    display: table;
+    position: relative;
+    text-align: center;
+}
+
+#popup1 h3 {
+    font-family: 'Droid Arabic Kufi', Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.v-center > div {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    top: -10%;
+}
+
+.btn-small {
+    padding: .75em 1em;
+    font-size: 0.8em;
+}
+
+.modal-box {
+    background: rgb(255, 255, 255) none repeat scroll 0 0 padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    display: none;
+    position: fixed;
+    width: 98%;
+    z-index: 1000;
+}
+
+@media (min-width: 32em) {
+
+    .modal-box {
+        width: 300px;
+    }
+}
+
+.modal-box header,
+.modal-box .modal-header {
+    padding: 7px;
+    border-bottom: 1px solid #ddd;
+}
+
+    .modal-box header h3,
+    .modal-box header h4,
+    .modal-box .modal-header h3,
+    .modal-box .modal-header h4 {
+        margin: 0;
+    }
+
+.modal-box .modal-body {
+    padding: 0 1.5em;
+}
+
+.modal-box footer,
+.modal-box .modal-footer {
+    padding: 1em;
+    border-top: 1px solid #ddd;
+    background: rgba(0, 0, 0, 0.02);
+    text-align: right;
+}
+
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0 !important;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 900;
+}
+
+a.close {
+    color: rgb(187, 187, 187);
+    font-size: 1.5em;
+    line-height: 1;
+    position: absolute;
+    left: 6%;
+    text-decoration: none;
+    top: 5%;
+}
+
+    a.close:hover {
+        color: #222;
+        -webkit-transition: color 1s ease;
+        -moz-transition: color 1s ease;
+        transition: color 1s ease;
+    }
+
+.member_submit {
+    background-color: #383838;
+    color: #FFF;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 90px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.members_login input {
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px;
+    display: block;
+    margin: 15px 0;
+    padding: 7px 15px;
+    width: 100%;
+}
+
+.members_login > img {
+    width: 44%;
+}
+
+.forget_pass {
+    color: #3f3f3f;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 75px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.table .name {
+    float: right;
+    text-align: right;
+    color: #666666;
+}
+
+.table .text {
+    float: right;
+    text-align: right;
+    color: #666666;
+}

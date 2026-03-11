@@ -1,0 +1,482 @@
+<html lang=""><head>
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta content="eservices.mm.gov.om" name="subject">
+	<meta name="Identifier-URL" content="http://eservices.mm.gov.om">
+	<meta name="Author" content="Muscat Municipality IT Team ">
+
+	<link rel="stylesheet" href="mm/assets/css/bootstrap.css">
+	<link rel="stylesheet" href="mm/assets/css/slick.css">
+	<link rel="stylesheet" href="mm/assets/css/aos.css">
+		<title>  بلدية مسقط - بوابة الخدمات الإلكترونية</title>
+		<link rel="stylesheet" href="mm/assets/css/style.css">	
+		<link rel="stylesheet" href="mm/assets/css/style1.css">
+
+
+	<link rel="stylesheet" href="mm/assets/css/responsive.css">
+	<link rel="stylesheet" href="mm/styles/modalpopup.css">
+	<link rel="stylesheet" href="mm/styles/jquery_ui_1.12.1.css">
+
+	 <link rel="stylesheet" href="cdn.datatables.net/1.10.16/css/jquery.datatables.min.css">
+	<link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+	<link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+	<link rel="stylesheet" href="cdn.datatables.net/2.1.8/css/datatables.bootstrap5.css">
+	<link rel="stylesheet" href="cdn.datatables.net/responsive/3.0.3/css/responsive.bootstrap5.css">
+ 
+
+ <link href="css/popup.css" rel="stylesheet">
+	<link href="fonts/font_awesome/css/font_awesome.css" rel="stylesheet">
+
+	<link href="fonts/fontawesome_5.10.2/css/fontawesome.css" rel="stylesheet">
+	<script src="mm/assets/js/jquery.js"></script>
+	<script src="mm/scripts/site.js"></script>
+	<script src="mm/scripts/hash.js"></script>
+	<script src="mm/js/slick.js"></script>
+	<script src="mm/scripts/nivo.slider.js"></script>
+	<script src="mm/scripts/jquery.lightbox_0.5.min.js"></script>
+	<script src="mm/scripts/jquery_ui_1.8.19.custom.min.js"></script>
+	<script src="mm/scripts/jquery.bxslider.min.js"></script>
+	<script src="mm/scripts/jquery.printelement.min.js"></script>
+	<script src="mm/slider/jshashtable_2.1_src.js"></script>
+	<script src="mm/slider/jquery.numberformatter_1.2.3.js"></script>
+	<script src="mm/slider/tmpl.js"></script>
+	<script src="mm/slider/jquery.dependclass_0.1.js"></script>
+	<script src="mm/slider/draggable_0.1.js"></script>
+	<script src="mm/slider/jquery.slider.js"></script>
+	<script src="mm/js/scroll/jquery.mousewheel.js"></script>
+	<script src="mm/js/scroll/ekscrollable.js"></script>
+	<script src="mm/js/scroll/demo.js"></script>
+	
+	
+
+	
+
+    <link href="css/layoutwithvnav.css" rel="stylesheet">
+    <link href="css/form.ar.css" rel="stylesheet">
+
+    <link href="dist/css/dropify.css" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="css/inline_styles.css"></head>
+<body class="inner-page-bg" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+	<div id="popup-bg" class="px-5">
+		<dix id="popup-close">
+			x
+		</dix>
+		<div id="popup">
+
+			<iframe id="popup-iframe" style="width:100%;height:100%"> </iframe>
+		</div>
+	</div>
+	<div class="javrx">
+
+		
+<div class="topnav">
+    <a class="colorSwitch"><img src="mm/assets/img/eye.svg" alt=""></a>
+    <a class="decFont"><img src="mm/assets/img/aminus.svg" alt=""></a>
+    <a class="incFont"><img src="mm/assets/img/aplus.svg" alt=""></a>
+    <a href="/SiteMap"><img src="mm/assets/img/sitemap.svg" alt=""></a>
+    <a href="#"><img src="mm/assets/img/envelope.svg" alt=""></a>
+    <a href="#" class="nb-wrap"><img src="mm/assets/img/bell.svg" alt=""></a>
+
+
+
+    <a href="/Home/CultureManagement?culture=en&amp;returnUrl=%2FHome%2FForm%2FMTI%3D">
+        EN
+    </a>
+</div>
+
+<div id="search-box">
+    <div class="container">
+        <a class="close" href="#close"></a>
+        <div class="search-main">
+            <div class="search-inner">
+                <input id="inputSearch" name="inputSearch" placeholder="Please enter the search keywords" class="SearchTextBoxCss">
+                <a href="#" class="btn-search" onclick="searchresult()"><img src="en/assets/img/search_big.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container pos-relative">
+        <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="/" class="logo"><img src="mm/assets/img/logo.svg" alt=""></a>
+
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.mm.gov.om/ar/Default.aspx">الرئيسية</a>
+
+
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="https://www.mm.gov.om/ar/Page.aspx?PAID=1#Details&amp;amp;MID=6&amp;amp;PGID=112" id="Menu_1">عن البلدية</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="https://www.mm.gov.om/ar/Page.aspx?PAID=2#Details&amp;amp;MID=139&amp;amp;PGID=465" id="Menu_2">خدمات البلدية</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-link active" aria-current="page" href="https://www.mm.gov.om/ar/Page.aspx?PAID=3#Details&amp;amp;MID=22&amp;amp;PGID=158" id="Menu_3">عن مسقط</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="https://www.mm.gov.om/ar/Page.aspx?PAID=122#OpenData&amp;MID=128&amp;Slide=True&amp;MoID=72" id="Menu_122">البيانات المفتوحة</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="https://www.mm.gov.om/ar/EParticipation.aspx" id="Menu_157">المشاركة المجتمعية</a>
+                    </li>
+
+                </ul>
+
+        </div>
+    </div>
+</nav>
+		<section class="banner">
+			<img src="mm/assets/img/banner.jpg" class="w-100" alt="">
+			<div class="head-banner">
+				<h1>
+					بوابة الخدمات الالكترونية</h1>
+				<ul class="breadcrumb">
+					<li onclick="window.location='https://www.mm.gov.om/ar/Default.aspx'" style="cursor:pointer">الرئيسية</li>
+					<li onclick="window.location='/MM/Index'"> &gt;&gt; بوابة الخدمات الالكترونية </li>
+				</ul>
+			</div>
+		</section>
+		<main role="main" class="container">
+			<section class="inner-page-box">
+				<div class="container">
+					<div class="box-white-bg">
+						
+
+
+<input type="hidden" id="isSubmited" value="0">
+
+<div class="row justify-content-end mt-0 mx-0  ">
+
+    <div class=" col-12 text-center p-0  mb-2">
+        <div class="card px-0 pt-4 pb-0 mb-3">
+            <h2></h2>
+
+
+                <h2> <strong>تسجيل عقد إيجار جديد لمؤجر نوعه (فرد)</strong></h2>
+
+
+
+                    <p>للمتابعة الرجاء تعبئة كل الحقول </p>
+                    <div class="row">
+                        <div class="col-md-12 mx-0 ">
+                            <form id="msform" class="row g-3 needs-validation" novalidate="novalidate" enctype="multipart/form-data" method="post">
+
+                                <input type="hidden" name="subserviceid" id="service-id" value="MTAw">
+                                <input type="hidden" value="100" data-val="true" data-val-required="The ServiceID field is required." id="ServiceID" name="ServiceID">
+                                <input type="hidden" value="12" data-val="true" data-val-required="The CardID field is required." id="CardID" name="CardID">
+                                <!-- progressbar -->
+
+                                <ul id="progressbar">
+                                    <li class="active" id="request-info"><strong>تفاصيل الطلب </strong></li>
+
+                                    <li id="document"><strong>سداد الرسوم </strong></li>
+                                    <li id="validation"><strong>التحقق</strong></li>
+                                    <li id="confirm"><strong>Finish</strong></li>
+                                </ul> <!-- fieldsets -->
+
+                                <fieldset>
+
+
+
+
+                                    <div>
+
+                                        <div class="row mb-2">
+                                            <div class="form-group col-md-6">
+                                                <label for="Name">الاسم</label>
+                                                <input type="text" required class="form-control" placeholder="" data-val="true" data-val-maxlength="The field الاسم must be a string or array type with a maximum length of '150'." data-val-maxlength-max="150" data-val-minlength="The field الاسم must be a string or array type with a minimum length of '1'." data-val-minlength-min="1" data-val-regex="الرجاء إدخال حروف فقط" data-val-regex-pattern="^[ء-يa-zA-Z ]*$" data-val-required="*" id="Name" maxlength="150" name="Name" value="">
+                                               <span class="field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="Mobile">رقم الهاتف </label>
+                                                <input type="text" required class="form-control" placeholder="" data-val="true" data-val-maxlength="الرجاء إدخال 8 ارقام فقط" data-val-maxlength-max="8" data-val-minlength="الرجاء إدخال 8 ارقام فقط" data-val-minlength-min="8" data-val-phone="الرجاء إدخال 8 ارقام فقط" data-val-required="*" id="Mobile" maxlength="8" name="Mobile" value="">
+                                            <span class="field-validation-valid" data-valmsg-for="Mobile" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row mb-2">
+                                            <div class="form-group col-md-6">
+                                                <label for="IdentityType">نوع المعرف</label>
+                                                <select class="form-select" data-val="true" data-val-required="The نوع المعرف field is required." id="IdentityType" name="IdentityType">
+                                                    <option value="CV">افراد</option>
+                                                    <option value="AG">إتفاقية / شراكة</option>
+                                                    <option value="CR">سجل تجاري</option>
+
+                                                    <option value="EM">سفارة</option>
+                                                    <option value="FC">شركة أجنبية</option>
+                                                    <option value="GV">جهة حكومية</option>
+                                                    <option value="HT">ورثة</option>
+                                                    <option value="PR">cusPR</option>
+
+                                                </select>
+                                                <span class="field-validation-valid" data-valmsg-for="IdentityType" data-valmsg-replace="true"></span>
+
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="Identity">رقم المعرف (بطاقة شخصية / سجل تجاري)</label>
+                                                <input type="text" class="form-control" placeholder="" data-val="true" data-val-maxlength="The field رقم المعرف (بطاقة شخصية / سجل تجاري) must be a string or array type with a maximum length of '20'." data-val-maxlength-max="20" data-val-regex="االرجاء إدخال أرقام فقط" data-val-regex-pattern="^[\d ]*$" data-val-required="*" id="Identity" maxlength="20" name="Identity" value="">
+                                                <span class="field-validation-valid" data-valmsg-for="Identity" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-2">
+                                            <div class="form-group col-md-12">
+                                                <label for="email">البريد الإلكتروني</label>
+                                                <input type="text" required class="form-control" placeholder="" data-val="true" data-val-email="الرجاء إدخال بريد إلكتروني صحيح" data-val-required="*" id="email" name="email" value="">
+                                                <span class="field-validation-valid" data-valmsg-for="email" data-valmsg-replace="true"></span>
+                                            </div>
+
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="form-group col-md-6">
+                                                <label for="DG">المديرية</label>
+                                                <select class="form-select" data-val="true" data-val-required="*" id="DG" name="DG">
+                                                    <option value="" selected="">--- اختر ---</option>
+                                                            <option value="6">بلدية مسقط في بوشر</option>
+                                                            <option value="4">بلدية مسقط في مطرح</option>
+                                                            <option value="20">بلدية مسقط في مسقط</option>
+                                                            <option value="5">بلدية مسقط في العامرات</option>
+                                                            <option value="9">بلدية مسقط في قريات</option>
+                                                            <option value="7">بلدية مسقط في السيب</option>
+                                                </select>
+                                                <span class="field-validation-valid" data-valmsg-for="DG" data-valmsg-replace="true"></span>
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div class="row mb-2">
+                                            <div class="form-group col-12">
+                                                <label for="Details">التفاصيل</label>
+                                                <textarea class="form-control" rows="5" data-val="true" data-val-maxlength="mobileMaxError" data-val-maxlength-max="250" data-val-regex="لا يسسمح يإ.دخال &lt; او &gt;" data-val-regex-pattern="^[^&lt;&gt;]*$" data-val-required="*" id="Details" maxlength="250" name="Details"></textarea>
+                                                <span class="field-validation-valid" data-valmsg-for="Details" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+                                    </div>
+                <input type="button" name="next" class="next action-button" value="التالي" onclick="window.location.href='kjij.html'">
+                                </fieldset>
+                                    
+
+
+                                        
+                                       
+                                </fieldset>
+                        </div>
+                    </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+					
+					 <a href="kjij.html" class="confirm-btn">التالي</a>
+					 </div>
+				</div>
+			</section>
+		</main>
+		
+
+    <footer data-aos="fade-down" class="aos-init">
+        <div class="container">
+
+            <div class="row bottom-links">
+                <div class="col-md-3">
+                    <h3>روابط خارجية</h3>
+                    <span class="line-footer"></span>
+                    <ul class="footer-links">
+
+                        <li><a href="http://www.oman.om" target="_blank" title="خدمات الحكومة الإلكترونية">خدمات الحكومة الإلكترونية</a></li>
+
+                        <li><a href="http://pacp.gov.om/" target="_blank" title="الهيئة العامة لحماية المستهلك">الهيئة العامة لحماية المستهلك</a></li>
+
+                        <li><a href="http://rop.gov.om/" target="_blank" title="شرطة عمان السلطانية ">شرطة عمان السلطانية </a></li>
+
+                        <li><a href="http://www.omantourism.gov.om" target="_blank" title="وزارة السياحة">وزارة السياحة</a></li>
+
+                        <li><a href="http://www.haya.com.om" target="_blank" title="حيا للمياه">حيا للمياه</a></li>
+
+                        <li><a href="http://www.data.gov.om" target="_blank" title="المركز الوطني للإحصاء والمعلومات">المركز الوطني للإحصاء والمعلومات</a></li>
+
+                        <li><a href="https://data.gov.om" target="_blank" title="بوابة البيانات">بوابة البيانات</a></li>
+
+                        <li><a href="https://www.mmc.gov.om/Default.aspx" target="_blank" title="المجلس البلدي لمحافظة مسقط">المجلس البلدي لمحافظة مسقط</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>مواقع فرعية</h3>
+                    <span class="line-footer"></span>
+                    <ul class="footer-links">
+                        <li>
+
+                            <a href="https://eservices.mm.gov.om/" target="_blank" title="E_Services portal">
+                                بوابة الخدمات الإلكترونية
+                            </a>
+
+                        </li>
+
+                        <li><a href="http://gis.mm.gov.om/" title="نظم المعلومات الجغرافية" target="_blank">نظم المعلومات الجغرافية</a></li>
+
+                        <li><a href="http://baitalbaranda.mm.gov.om/" title="بيت البرندة" target="_blank">بيت البرندة</a></li>
+
+                        <li><a href="https://www.mm.gov.om/ar/Page.aspx?PAID=2#Details&amp;amp;MID=139&amp;amp;PGID=214" title="">الإرشادات الصحية</a></li>
+                           <li><a href="https://www.mm.gov.om/ar/Page.aspx?PAID=2#Details&amp;amp;MID=139&amp;amp;PGID=185" title="">الاشتراطات الصحية للأنشطة التجارية</a></li>
+
+                        <li><a href="https://eservices.mm.gov.om" title="الخدمات الالكترونية" target="_blank">الخدمات الالكترونية</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>التواصل</h3>
+                    <span class="line-footer"></span>
+                    <ul class="footer-links">
+                        <li><a href="https://www.mm.gov.om/ar/Page.aspx?PAID=5#Details&amp;amp;MID=70&amp;amp;PGID=240">مركز اتصالات مسقط </a></li>
+                        <li><a href="https://tajawob.om/">نظام البلاغات</a></li>
+                           <li><a href="https://www.mm.gov.om/ar/Page.aspx?PAID=5#Details&amp;amp;MID=81&amp;amp;PGID=243">تطبيق الهواتف الذكية (بلديتي)</a></li>
+                           <li><a href="https://www.mm.gov.om/ar/Poll.aspx">الاستبيانات واستطلاعات الرأى</a></li>
+                           <li><a href="https://www.mm.gov.om/ar/Feedback.aspx">شارك برأيك</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="mm-details">
+                        <img src="mm/assets/img/logo_white.svg" class="logo-footer" alt="">
+                        <ul class="social">
+                            <li>
+                                <a href="https://www.instagram.com/Muscat_Municipality/">
+                                    <img src="mm/assets/img/insta.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/MctMunicipality">
+                                    <img src="mm/assets/img/twitter.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/MuscatMunicipality">
+                                    <img src="mm/assets/img/youtube.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="mm/assets/img/linkedin.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="imp-links">
+                            <li><span class="arrow-left-footer"></span><a href="#">الرخصة الحكومية المفتوحة - عُمان</a></li>
+
+                            <li><span class="arrow-left-footer"></span><a href="#">عدّاد الزوار لهذه الصفحة &nbsp;&nbsp;7980842 </a></li>
+
+                            <li><span class="arrow-left-footer"></span><a href="#">عدّاد الزوار للموقع&nbsp;&nbsp;938445825  </a></li>
+
+                        </ul>
+                        <ul class="w3">
+                            <li>
+                                <a href="https://validator.w3.org/check?uri=https%3A%2F%2Fwww.mm.gov.om%2Fdefault.aspx">
+                                    <img src="mm/assets/img/w31.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://jigsaw.w3.org/css-validator/validator?uri=www.mm.gov.om%2Fdefault.aspx&amp;profile=css3&amp;usermedium=all&amp;warning=1">
+                                    <img src="mm/assets/img/w32.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.w3.org/WAI/WCAG1AA-Conformance">
+                                    <img src="mm/assets/img/w33.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <hr>
+                <div class="flex-row-footer">
+                    <img src="mm/assets/img/logo_white.svg" class="bottom-footer-logo" alt="">
+                    <ul>
+                        <li><a href="https://www.mm.gov.om/ar/FPage.aspx?PGID=180">خصوصية الموقع</a></li>
+                           <li><a href="https://www.mm.gov.om/ar/FPage.aspx?PGID=181">الشروط و الأحكام</a></li>
+                           <li><a href="https://www.mm.gov.om/ar/FPage.aspx?PGID=182">إمكانية الوصول</a></li>
+                           <li><a href="https://www.mm.gov.om/ar/SiteMap.aspx">خارطة الموقع</a></li>
+                           <li><a href="https://www.mm.gov.om/ar/Page.aspx?PAID=5#Details&amp;amp;MID=29&amp;amp;PGID=129">الاتصال بنا</a></li>
+                           <li><a href="https://www.mm.gov.om/ar/FPage.aspx?PGID=416">السياسات</a></li>
+                        <li><a href="https://www.mm.gov.om/PDF/servicecharter.pdf">ميثاق خدمة المتعاملين</a></li>
+                    </ul>
+                    <img src="mm/assets/img/2040.svg" class="bottom-footer-2040" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+		<script src="mm/assets/js/bootstrap.bundle.js"></script>
+		<script src="cdn.datatables.net/2.1.8/js/datatables.js"></script>
+		<script src="cdn.datatables.net/2.1.8/js/datatables.bootstrap5.js"></script>
+		<script src="cdn.datatables.net/responsive/3.0.3/js/datatables.responsive.js"></script>
+		<script src="cdn.datatables.net/responsive/3.0.3/js/responsive.bootstrap5.js"></script>
+		<script src="mm/assets/js/slick.min.js"></script>
+		<script src="mm/assets/js/aos.js"></script>
+		<script src="mm/assets/js/custom.js"></script>
+		<script src="js/popup_page.js"></script>
+
+		
+		<script src="cdn.mindrocketsapis.com/client/latest/jquery.cookie.js"></script>
+		<script src="cdn.mindrocketsapis.com/client/latest/toolkit.js"></script>
+		<script src="cdn.mindrocketsapis.com/client/latest/signsplayer.js"></script>
+		<script src="cdn.mindrocketsapis.com/client/latest/tooltip_add.js"></script>
+		<script src="cdn.mindrocketsapis.com/client/latest/mr_advwinr1.js"></script>
+		<script src="cdn.mindrocketsapis.com/client/mm/integrator.js"></script>
+
+		<script src="cdn.mindrocketsapis.com/client/latest/mrmegapack.bundle.js"></script>
+		<script src="cdn.mindrocketsapis.com/client/mruap/mm/integrator_uap.js"></script>
+		
+
+         <script type="text/javascript" src="dist/js/dropify.js"></script>
+        
+
+
+        <script src="js/form.js"></script>
+		<script src="dist/js/jquery.validate.min.js"></script>
+<script src="dist/js/jquery.validate.unobtrusive.min.js"></script>
+
+
+
+
+
+	</div>
+
+       
+        
+
+     </div>  </div></body></html>

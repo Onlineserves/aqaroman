@@ -1,0 +1,132 @@
+﻿/* 1-Extra small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) {}
+2- Small devices (portrait tablets and large phones, 600px and up) 
+@media only screen and (min-width: 600px) {}
+3- Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) {}
+4- Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) {}
+5-Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {}
+    */
+#grad1 {
+    border-top: 7px solid rgb(255, 120, 0);
+}
+.card {
+    background-color: transparent;
+    font-weight:normal;
+
+}
+
+    .card h2 {
+        /* color:rgb(255, 120, 0);*/
+        /*text-shadow:1px 1px 2px black;*/
+    }
+
+.accordion-button, .accordion-button:not(.collapsed){
+    /*border-top: 7px solid rgb(255, 120, 0);*/
+    /* background-color: rgb(255, 120, 0,0.6);
+        background-color: rgb(255, 255, 255,0.6);*/
+    background-color: #f7f7f7;
+    color: #333;
+    font-weight: bold;
+    white-space: normal;
+    /*color: rgb(255, 120, 0);*/
+    /*font-size: 18pt;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px black;*/
+}
+
+         .accordion-button:hover {
+            background-color: rgba(255, 120, 0,0.3);
+        }
+
+.accordion-button:after {
+    color: rgb(255 120 0 / 1.00);
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ff6600'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+    .accordion-button:focus, .accordion-button:visited, .accordion-button:link {
+        /* box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 25%);*/
+        /*color: rgb(255, 120, 0);*/
+        /*border-top: 7px solid rgb(255, 120, 0);*/
+        box-shadow: none;
+        background-color: #f7f7f7;
+        color: #333;
+        background-color: rgba(255, 120, 0,0.1);
+    }
+
+.card p , .card ul li {
+    /* color: rgba(0, 0,0,.7);*/
+    /*font-size: 14pt;*/
+    /*text-shadow: 1px 1px 2px black;*/
+    font-weight:normal;
+}
+
+ul li a {
+         color: rgb(255, 120, 0);
+        /*  color:rgba(255,255,255,0.8);
+        text-shadow: 1px 1px 2px #000;*/
+        text-decoration: none;
+      
+        font-weight: bold;
+    }
+
+.card .btn {
+    background-color: rgb(255, 120, 0);
+    width: 250px;
+}
+
+.left-side {
+    width: 75%;
+    padding: 10px 20px;
+}
+    .left-side .accordion-button {
+        /* box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 25%);*/
+        /*color: rgb(255, 120, 0);*/
+        /*border-top: 7px solid rgb(255, 120, 0);*/
+    }
+        .right-side {
+        width: 25%;
+        padding: 0 0;
+        /*padding-top: 150px;*/
+    }
+    .right-side li{
+        padding:5px 0px ;
+    }
+    .right-side li:hover {
+        background-color: rgba(255, 120, 0,0.3);
+    }
+        .right-side li:focus {
+            background-color: rgba(255, 120, 0,0.3);
+        }
+
+        /*.right-side li::before {
+            font-family: "FontAwesome";
+            font-weight: 400;
+            color: rgb(255, 120, 0);
+            content: "\f0a8";
+            margin: 10px 10px;
+        }*/
+
+.card .fa {
+    /*    color: rgb(255, 120, 0);
+*/
+    color: #644998;
+    margin: 0px 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .left-side, .right-side {
+        width: 100%
+    }
+    .right-side {
+       
+        padding-top: 0px;
+    }
+    .left-side {
+       
+        padding-bottom: 10px;
+    }
+
+}

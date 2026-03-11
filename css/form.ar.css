@@ -1,0 +1,268 @@
+﻿
+
+#grad1 {
+    /* background-image: linear-gradient(120deg, #fff, #644998);*/
+    width: 100%;
+}
+
+.card {
+    /* background-image: linear-gradient(120deg, #fff, #644998);
+
+   background-color:rgba(255,255,255,.2)*/
+    background-color: transparent
+}
+
+#msform {
+    direction: rtl;
+   color:#644998;
+    position: relative;
+    margin-top: 20px
+}
+
+    #msform fieldset .form-card {
+        border: 0 none;
+        border-radius: 0px;
+        /* box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);*/
+        padding: 20px 40px 30px 40px;
+        box-sizing: border-box;
+        width: 94%;
+        margin: 0 3% 20px 3%;
+        position: relative;
+        overflow: auto;
+        height: 300px;
+    }
+
+    #msform fieldset {
+        /* background-color:#644998;*/
+        border: 0 none;
+        border-radius: 0.5rem;
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0;
+        padding-bottom: 20px;
+        position: relative
+    }
+
+        #msform fieldset:not(:first-of-type) {
+            display: none
+        }
+
+        #msform fieldset .form-card {
+            text-align: left;
+            color: #644998  /*#644998*/
+        }
+    #msform label {
+        text-align: right;
+      /* background-color:red;*/
+       width:100%
+    }
+
+    #msform input:not([type="checkbox"]),
+    #msform textarea, #msform select {
+        padding: 0px 8px 4px 8px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        border-radius: 0px;
+        margin-top: 10px;
+        width: 100%;
+        /*text-align:right;*/
+        box-sizing: border-box;
+        color: #2C3E50;
+        /*  font-size: 16px;*/
+        letter-spacing: 1px;
+        border-bottom: 2px solid #644998;
+    }
+
+        #msform input:not([type="checkbox"]):focus,
+        #msform textarea:focus, #msform select:focus {
+            -moz-box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            border: none;
+            /* font-weight: bold;*/
+            border-bottom: 2px solid #173E42;
+            outline-width: 0
+        }
+
+option {
+    margin: 40px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    color: #644998;
+}
+
+select option:hover, select option:focus {
+    background-color: #173E42 /*#644998*/;
+    color: #fff;
+}
+
+#msform .action-button, #msform input[type="button"] {
+    width: 100px;
+    background: #644998;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+    text-align:center
+}
+
+
+    #msform .action-button:hover,
+    #msform input[type="button"]:hover,
+    #msform .action-button:focus,
+    #msform input[type="button"]:focus {
+        box-shadow: 0 0 0 2px white, 0 0 0 3px skyblue
+    }
+
+#msform .action-button-previous {
+    width: 100px;
+    background: #616161;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px
+}
+
+    #msform .action-button-previous:hover,
+    #msform .action-button-previous:focus {
+        box-shadow: 0 0 0 2px white, 0 0 0 3px #616161
+    }
+
+button:disabled,
+button[disabled], .disabled {
+    opacity: 0.4;
+}
+
+select .list-dt {
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 2px 5px 3px 5px;
+    margin: 2px
+}
+
+    select.list-dt:focus {
+        border-bottom: 2px solid skyblue
+    }
+
+.card {
+    z-index: 0;
+    border: none;
+    border-radius: 0.5rem;
+    position: relative
+}
+
+.fs-title {
+    /*font-size: 25px;*/
+    color: #2C3E50;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: right
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey;
+    color: #644998;
+}
+
+    #progressbar .active {
+       
+        color: #173E42;
+    }
+
+    #progressbar li {
+        list-style-type: none;
+        font-size: 12px;
+        width: 25%;
+        float: right;
+        position: relative;
+        color: #644998;
+    }
+
+    #progressbar #request-info:before {
+        font-family: FontAwesome;
+        content: "\f298";
+    }
+
+    #progressbar #document:before {
+        font-family: FontAwesome;
+        content: "\f093";
+    }
+
+    #progressbar #validation:before {
+        font-family: FontAwesome;
+        content: "\f10b"
+    }
+
+    #progressbar #confirm:before {
+        font-family: FontAwesome;
+        content: "\f00c"
+    }
+
+    #progressbar li:before {
+        width: 50px;
+        height: 50px;
+        line-height: 45px;
+        display: block;
+        font-size: 18px;
+        color: #ffffff;
+        background: #644998 /*#644998*/;
+        border-radius: 50%;
+        margin: 0 auto 10px auto;
+        padding: 2px
+    }
+
+    #progressbar li:after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #644998;
+        position: absolute;
+        left: 0;
+        top: 25px;
+        z-index: -1
+    }
+
+    #progressbar li.active:before,
+    #progressbar li.active:after {
+        background: #173E42;
+        color: #fff;
+        font-weight: bold
+    }
+
+.radio-group {
+    position: relative;
+    margin-bottom: 25px
+}
+
+.radio {
+    display: inline-block;
+    width: 20px;
+    height: 104px;
+    border-radius: 0;
+    background: lightblue;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 8px 2px
+}
+
+    .radio:hover {
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3)
+    }
+
+    .radio.selected {
+        box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1)
+    }
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
