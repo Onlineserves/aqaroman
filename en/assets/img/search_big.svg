@@ -1,0 +1,562 @@
+
+<!DOCTYPE html>
+<html lang="">
+
+
+<head>
+	<meta charset="utf-8" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<meta content="eservices.mm.gov.om" name="subject">
+	<meta name="Identifier-URL" content="http://eservices.mm.gov.om">
+	<meta name="Author" content="Muscat Municipality IT Team ">
+
+	<link rel="stylesheet" href="/mm/assets/css/bootstrap.css" />
+	<link rel="stylesheet" href="/mm/assets/css/slick.css" />
+	<link rel="stylesheet" href="/mm/assets/css/aos.css" />
+		<title>  بلدية مسقط - بوابة الخدمات الإلكترونية</title>
+		<link rel="stylesheet" href="/mm/assets/css/style.css" />	
+		<link rel="stylesheet" href="/mm/assets/css/Style1.css" />
+
+
+	<link rel="stylesheet" href="/mm/assets/css/responsive.css" />
+	<link rel="stylesheet" href="/mm/Styles/modalpopup.css" />
+	<link rel="stylesheet" href="/mm/Styles/jquery-ui-1.12.1.css" />
+
+	 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" />
+	<link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css" />
+	<link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.3/css/responsive.bootstrap5.css" />
+ 
+
+ <link href="/css/popup.css" rel="stylesheet">
+	<link href="/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+	<link href="/fonts/fontawesome-5.10.2/css/fontawesome.css" rel="stylesheet" />
+	<script src="/mm/assets/js/jquery.js"></script>
+	<script src="/mm/Scripts/Site.js"></script>
+	<script src="/mm/Scripts/Hash.js"></script>
+	<script src="/mm/js/slick.js"></script>
+	<script src="/mm/Scripts/nivo.slider.js"></script>
+	<script src="/mm/Scripts/jquery.lightbox-0.5.min.js"></script>
+	<script src="/mm/Scripts/jquery-ui-1.8.19.custom.min.js"></script>
+	<script src="/mm/Scripts/jquery.bxslider.min.js"></script>
+	<script src="/mm/Scripts/jquery.printElement.min.js"></script>
+	<script src="/mm/Slider/jshashtable-2.1_src.js"></script>
+	<script src="/mm/Slider/jquery.numberformatter-1.2.3.js"></script>
+	<script src="/mm/Slider/tmpl.js"></script>
+	<script src="/mm/Slider/jquery.dependClass-0.1.js"></script>
+	<script src="/mm/Slider/draggable-0.1.js"></script>
+	<script src="/mm/Slider/jquery.slider.js"></script>
+	<script src="/mm/js/scroll/jquery.mousewheel.js"></script>
+	<script src="/mm/js/scroll/ekScrollable.js"></script>
+	<script src="/mm/js/scroll/demo.js"></script>
+	
+	<style>
+		@font-face {
+			font-family: 'Cairo';
+			src: url('/mm/assets/fonts/Cairo-Regular.woff');
+			font-weight: 400;
+		}
+
+		@font-face {
+			font-family: 'Cairo';
+			src: url('/mm/assets/fonts/Cairo-Bold.woff');
+			font-weight: 700;
+		}
+	</style>
+
+	
+</head>
+<body class="inner-page-bg">
+	<div id="popup-bg" class="px-5">
+		<dix id="popup-close">
+			x
+		</dix>
+		<div id="popup">
+
+			<iframe id="popup-iframe" style="width:100%;height:100%"> </iframe>
+		</div>
+	</div>
+	<div class="javrx">
+
+		
+<div class="topnav">
+    <a class="colorSwitch"><img src="/mm/assets/img/eye.svg" alt="" /></a>
+    <a class="decFont"><img src="/mm/assets/img/Aminus.svg" alt="" /></a>
+    <a class="incFont"><img src="/mm/assets/img/Aplus.svg" alt="" /></a>
+    <a href="/SiteMap"><img src="/mm/assets/img/sitemap.svg" alt="" /></a>
+    <a href="#"><img src="/mm/assets/img/envelope.svg" alt="" /></a>
+    <a href="#" class="nb-wrap"><img src="/mm/assets/img/bell.svg" alt="" /></a>
+
+
+
+    <a href="/Home/CultureManagement?culture=en&amp;returnUrl=%2FMM">
+        EN
+    </a>
+</div>
+
+<div id="search-box">
+    <div class="container">
+        <a class="close" href="#close"></a>
+        <div class="search-main">
+            <div class="search-inner">
+                <input id="inputSearch" name="inputSearch" placeholder="Please enter the search keywords" class="SearchTextBoxCss" />
+                <a href="#" class="btn-search" onclick="searchresult()"><img src="/en/assets/img/search-big.svg" alt="" /></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container pos-relative">
+        <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="/" class="logo"><img src="/mm/assets/img/logo.svg" alt="" /></a>
+
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.mm.gov.om/ar/Default.aspx">الرئيسية</a>
+
+
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="https://www.mm.gov.om/ar/Page.aspx?PAID=1#Details&amp;amp;MID=6&amp;amp;PGID=112" id="Menu_1">عن البلدية</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="https://www.mm.gov.om/ar/Page.aspx?PAID=2#Details&amp;amp;MID=139&amp;amp;PGID=465" id="Menu_2">خدمات البلدية</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-link active" aria-current="page" href="https://www.mm.gov.om/ar/Page.aspx?PAID=3#Details&amp;amp;MID=22&amp;amp;PGID=158" id="Menu_3">عن مسقط</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="https://www.mm.gov.om/ar/Page.aspx?PAID=122#OpenData&amp;MID=128&amp;Slide=True&amp;MoID=72" id="Menu_122">البيانات المفتوحة</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="https://www.mm.gov.om/ar/EParticipation.aspx" id="Menu_157">المشاركة المجتمعية</a>
+                    </li>
+
+                </ul>
+
+        </div>
+    </div>
+</nav>
+		<section class="banner">
+			<img src="/mm/assets/img/banner.jpg" class="w-100" alt="">
+			<div class="head-banner">
+				<h1>
+					بوابة الخدمات الالكترونية</h1>
+				<ul class="breadcrumb">
+					<li onclick="window.location='https://www.mm.gov.om/ar/Default.aspx'" style="cursor:pointer">الرئيسية</li>
+					<li onclick="window.location='/MM/Index'"> >> بوابة الخدمات الالكترونية </li>
+				</ul>
+			</div>
+		</section>
+		<main role="main" class="container">
+			<section class="inner-page-box">
+				<div class="container">
+					<div class="box-white-bg">
+						
+<div class="tab-on-top">
+	<ul>
+
+			<li id="tab-head-1" idstr="1" class="active">
+
+
+				<a href="#" title="" class="FirstA" style="font-size:14px">
+					<img src="/img/newRequest.png" alt="" width="65px">
+&#x637;&#x644;&#x628; &#x62C;&#x62F;&#x64A;&#x62F;				</a>
+			</li>
+			<li id="tab-head-2" idstr="2" class="">
+
+
+				<a href="#" title="" class="FirstA" style="font-size:14px">
+					<img src="/img/search1.png" alt="" width="65px">
+&#x627;&#x633;&#x62A;&#x639;&#x644;&#x627;&#x645;&#x627;&#x62A;				</a>
+			</li>
+			<li id="tab-head-3" idstr="3" class="">
+
+
+				<a href="https://isupport2.mm.gov.om/MMPaymentGateway/Home.xhtml" title="" class="FirstA" style="font-size:14px">
+					<img src="/img/pay.png" alt="" width="65px">
+&#x627;&#x644;&#x62F;&#x641;&#x639; &#x627;&#x644;&#x625;&#x644;&#x643;&#x62A;&#x631;&#x648;&#x646;&#x64A;  				</a>
+			</li>
+
+
+
+
+
+
+
+
+
+	</ul>
+</div>
+
+<div class="row mt-3">
+
+	<div class="col-md-2">
+
+
+		<div class="sidebar-tab current" id="tab139">
+			<ul>
+		<li class="page_467 mod_467 active">
+			<a href="#" data-mainid="1" data-subid="4">
+				<img src="/assets/img/arrow-purple.svg" alt="">
+&#x639;&#x642;&#x648;&#x62F; &#x627;&#x644;&#x627;&#x64A;&#x62C;&#x627;&#x631;			</a>
+		</li>
+		<li class="page_467 mod_467 ">
+			<a href="#" data-mainid="1" data-subid="5">
+				<img src="/assets/img/arrow-purple.svg" alt="">
+&#x627;&#x644;&#x62A;&#x631;&#x627;&#x62E;&#x64A;&#x635; &#x627;&#x644;&#x628;&#x644;&#x62F;&#x64A;&#x629;			</a>
+		</li>
+		<li class="page_467 mod_467 ">
+			<a href="#" data-mainid="1" data-subid="6">
+				<img src="/assets/img/arrow-purple.svg" alt="">
+&#x627;&#x644;&#x62A;&#x631;&#x627;&#x62E;&#x64A;&#x635; &#x627;&#x644;&#x641;&#x646;&#x64A;&#x629; 			</a>
+		</li>
+		<li class="page_467 mod_467 ">
+			<a href="#" data-mainid="1" data-subid="7">
+				<img src="/assets/img/arrow-purple.svg" alt="">
+&#x62A;&#x635;&#x627;&#x631;&#x64A;&#x62D; &#x627;&#x644;&#x645;&#x648;&#x627;&#x642;&#x641;			</a>
+		</li>
+		<li class="page_467 mod_467 ">
+			<a href="#" data-mainid="1" data-subid="8">
+				<img src="/assets/img/arrow-purple.svg" alt="">
+&#x62E;&#x62F;&#x645;&#x627;&#x62A; &#x627;&#x644;&#x645;&#x634;&#x62A;&#x631;&#x64A;&#x627;&#x62A;			</a>
+		</li>
+		<li class="page_467 mod_467 ">
+			<a href="#" data-mainid="1" data-subid="9">
+				<img src="/assets/img/arrow-purple.svg" alt="">
+&#x62F;&#x641;&#x639; &#x631;&#x633;&#x648;&#x645; &#x627;&#x644;&#x641;&#x646;&#x627;&#x62F;&#x642; &#x648;&#x627;&#x644;&#x645;&#x637;&#x627;&#x639;&#x645; &#x648;&#x627;&#x644;&#x62A;&#x630;&#x627;&#x643;&#x631;			</a>
+		</li>
+		<li class="page_467 mod_467 ">
+			<a href="#" data-mainid="1" data-subid="111">
+				<img src="/assets/img/arrow-purple.svg" alt="">
+&#x627;&#x644;&#x634;&#x624;&#x648;&#x646; &#x627;&#x644;&#x635;&#x62D;&#x64A;&#x629;			</a>
+		</li>
+		<li class="page_467 mod_467 ">
+			<a href="#" data-mainid="1" data-subid="117">
+				<img src="/assets/img/arrow-purple.svg" alt="">
+&#x62A;&#x631;&#x627;&#x62E;&#x64A;&#x635; &#x627;&#x644;&#x628;&#x646;&#x627;&#x621;			</a>
+		</li>
+		<li class="page_467 mod_467 ">
+			<a href="#" data-mainid="1" data-subid="123">
+				<img src="/assets/img/arrow-purple.svg" alt="">
+&#x627;&#x644;&#x639;&#x646;&#x648;&#x646;&#x629;			</a>
+		</li>
+		<li class="page_467 mod_467 ">
+			<a href="#" data-mainid="1" data-subid="135">
+				<img src="/assets/img/arrow-purple.svg" alt="">
+&#x627;&#x644;&#x62E;&#x62F;&#x645;&#x627;&#x62A; &#x627;&#x644;&#x639;&#x627;&#x645;&#x629;			</a>
+		</li>
+		<li class="page_467 mod_467 ">
+			<a href="#" data-mainid="1" data-subid="144">
+				<img src="/assets/img/arrow-purple.svg" alt="">
+&#x646;&#x638;&#x645; &#x627;&#x644;&#x645;&#x639;&#x644;&#x648;&#x645;&#x627;&#x62A; &#x627;&#x644;&#x62C;&#x63A;&#x631;&#x627;&#x641;&#x64A;&#x629;			</a>
+		</li>
+		<li class="page_467 mod_467 ">
+			<a href="#" data-mainid="1" data-subid="146">
+				<img src="/assets/img/arrow-purple.svg" alt="">
+&#x627;&#x644;&#x62A;&#x639;&#x648;&#x64A;&#x636; &#x639;&#x646; &#x627;&#x644;&#x627;&#x636;&#x631;&#x627;&#x631; &#x627;&#x644;&#x645;&#x627;&#x62F;&#x64A;&#x629; &#x644;&#x644;&#x645;&#x645;&#x62A;&#x644;&#x643;&#x627;&#x62A; &#x627;&#x644;&#x639;&#x627;&#x645;&#x629;			</a>
+		</li>
+</ul>
+		</div>
+
+
+
+	</div>
+
+	<div class="col-md-10" id="contentdiv2">
+
+		<div id="Pages_Left">
+			
+<div class="container">
+	<div class="row ">
+
+
+	</div>
+
+</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+
+					</div>
+				</div>
+			</section>
+		</main>
+		
+
+    <footer data-aos="fade-down" class="aos-init aos-animate">
+        <div class="container">
+
+            <div class="row bottom-links">
+                <div class="col-md-3">
+                    <h3>روابط خارجية</h3>
+                    <span class="line-footer"></span>
+                    <ul class="footer-links">
+
+                        <li><a href="http://www.oman.om" target="_blank" title="خدمات الحكومة الإلكترونية">خدمات الحكومة الإلكترونية</a></li>
+
+                        <li><a href="http://pacp.gov.om/" target="_blank" title="الهيئة العامة لحماية المستهلك">الهيئة العامة لحماية المستهلك</a></li>
+
+                        <li><a href="http://rop.gov.om/" target="_blank" title="شرطة عمان السلطانية ">شرطة عمان السلطانية </a></li>
+
+                        <li><a href="http://www.omantourism.gov.om" target="_blank" title="وزارة السياحة">وزارة السياحة</a></li>
+
+                        <li><a href="http://www.haya.com.om" target="_blank" title="حيا للمياه">حيا للمياه</a></li>
+
+                        <li><a href="http://www.data.gov.om" target="_blank" title="المركز الوطني للإحصاء والمعلومات">المركز الوطني للإحصاء والمعلومات</a></li>
+
+                        <li><a href="https://data.gov.om" target="_blank" title="بوابة البيانات">بوابة البيانات</a></li>
+
+                        <li><a href="https://www.mmc.gov.om/Default.aspx" target="_blank" title="المجلس البلدي لمحافظة مسقط">المجلس البلدي لمحافظة مسقط</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>مواقع فرعية</h3>
+                    <span class="line-footer"></span>
+                    <ul class="footer-links">
+                        <li>
+
+                            <a href="https://eservices.mm.gov.om/" target="_blank" title="E_Services portal">
+                                بوابة الخدمات الإلكترونية
+                            </a>
+
+                        </li>
+
+                        <li><a href="http://gis.mm.gov.om/" title="نظم المعلومات الجغرافية" target="_blank">نظم المعلومات الجغرافية</a></li>
+
+                        <li><a href="http://baitalbaranda.mm.gov.om/" title="بيت البرندة" target="_blank">بيت البرندة</a></li>
+
+                        <li><a href="https://www.mm.gov.om/ar/Page.aspx?PAID=2#Details&amp;amp;MID=139&amp;amp;PGID=214" title="">الإرشادات الصحية</a></li>
+                           <li><a href="https://www.mm.gov.om/ar/Page.aspx?PAID=2#Details&amp;amp;MID=139&amp;amp;PGID=185" title="">الاشتراطات الصحية للأنشطة التجارية</a></li>
+
+                        <li><a href="https://eservices.mm.gov.om" title="الخدمات الالكترونية" target="_blank">الخدمات الالكترونية</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>التواصل</h3>
+                    <span class="line-footer"></span>
+                    <ul class="footer-links">
+                        <li><a href="https://www.mm.gov.om/ar/Page.aspx?PAID=5#Details&amp;amp;MID=70&amp;amp;PGID=240">مركز اتصالات مسقط </a></li>
+                        <li><a href="https://tajawob.om/">نظام البلاغات</a></li>
+                           <li><a href="https://www.mm.gov.om/ar/Page.aspx?PAID=5#Details&amp;amp;MID=81&amp;amp;PGID=243">تطبيق الهواتف الذكية (بلديتي)</a></li>
+                           <li><a href="https://www.mm.gov.om/ar/Poll.aspx">الاستبيانات واستطلاعات الرأى</a></li>
+                           <li><a href="https://www.mm.gov.om/ar/Feedback.aspx">شارك برأيك</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="mm-details">
+                        <img src="/mm/assets/img/logo-white.svg" class="logo-footer" alt="">
+                        <ul class="social">
+                            <li>
+                                <a href="https://www.instagram.com/Muscat_Municipality/">
+                                    <img src="/mm/assets/img/insta.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/MctMunicipality">
+                                    <img src="/mm/assets/img/twitter.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/MuscatMunicipality">
+                                    <img src="/mm/assets/img/youtube.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/mm/assets/img/linkedin.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="imp-links">
+                            <li><span class="arrow-left-footer"></span><a href="#">الرخصة الحكومية المفتوحة - عُمان</a></li>
+
+                            <li><span class="arrow-left-footer"></span><a href="#">عدّاد الزوار لهذه الصفحة &nbsp;&nbsp;7980842 </a></li>
+
+                            <li><span class="arrow-left-footer"></span><a href="#">عدّاد الزوار للموقع&nbsp;&nbsp;938445825  </a></li>
+
+                        </ul>
+                        <ul class="w3">
+                            <li>
+                                <a href="https://validator.w3.org/check?uri=https%3A%2F%2Fwww.mm.gov.om%2Fdefault.aspx">
+                                    <img src="/mm/assets/img/w31.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://jigsaw.w3.org/css-validator/validator?uri=www.mm.gov.om%2Fdefault.aspx&amp;profile=css3&amp;usermedium=all&amp;warning=1">
+                                    <img src="/mm/assets/img/w32.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.w3.org/WAI/WCAG1AA-Conformance">
+                                    <img src="/mm/assets/img/w33.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <hr>
+                <div class="flex-row-footer">
+                    <img src="/mm/assets/img/logo-white.svg" class="bottom-footer-logo" alt="">
+                    <ul>
+                        <li><a href="https://www.mm.gov.om/ar/FPage.aspx?PGID=180">خصوصية الموقع</a></li>
+                           <li><a href="https://www.mm.gov.om/ar/FPage.aspx?PGID=181">الشروط و الأحكام</a></li>
+                           <li><a href="https://www.mm.gov.om/ar/FPage.aspx?PGID=182">إمكانية الوصول</a></li>
+                           <li><a href="https://www.mm.gov.om/ar/SiteMap.aspx">خارطة الموقع</a></li>
+                           <li><a href="https://www.mm.gov.om/ar/Page.aspx?PAID=5#Details&amp;amp;MID=29&amp;amp;PGID=129">الاتصال بنا</a></li>
+                           <li><a href="https://www.mm.gov.om/ar/FPage.aspx?PGID=416">السياسات</a></li>
+                        <li><a href="https://www.mm.gov.om/PDF/servicecharter.pdf">ميثاق خدمة المتعاملين</a></li>
+                    </ul>
+                    <img src="/mm/assets/img/2040.svg" class="bottom-footer-2040" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+		<script src="/mm/assets/js/bootstrap.bundle.js"></script>
+		<script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+		<script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script>
+		<script src="https://cdn.datatables.net/responsive/3.0.3/js/dataTables.responsive.js"></script>
+		<script src="https://cdn.datatables.net/responsive/3.0.3/js/responsive.bootstrap5.js"></script>
+		<script src="/mm/assets/js/slick.min.js"></script>
+		<script src="/mm/assets/js/aos.js"></script>
+		<script src="/mm/assets/js/custom.js"></script>
+		<script src="/js/popup-page.js"></script>
+
+		<script>
+			$(document).ready(function () {
+				$(".meni").click(function () {
+					$(".meni, .over_d").toggleClass("show");
+				});
+
+				$(".meni_ope").click(function () {
+					$(".meni_ope, .sub_menu").toggleClass("show");
+				});
+
+				$(".iconsnew").mouseover(function () {
+					var id = $(this).attr("id");
+					$(this).css({ 'background-image': 'url(../News/' + id + "orange.png" + ')' });
+				});
+
+				$(".iconsnew").mouseout(function () {
+					var id = $(this).attr("id");
+					$(this).css({ 'background-image': 'url(../News/' + id + ".png" + ')' });
+				});
+			});
+
+			$(".nb-wrap").hover(function () {
+				$(this).toggleClass("nb_hover");
+			});
+			$(".notifybox").hover(function () {
+				$(".nb-wrap").toggleClass("nb_hover");
+			});
+		</script>
+		<script src="https://cdn.mindrocketsapis.com/client/Latest/jquery.cookie.js"></script>
+		<script src="https://cdn.mindrocketsapis.com/client/Latest/toolkit.js"></script>
+		<script src="https://cdn.mindrocketsapis.com/client/Latest/signsplayer.js"></script>
+		<script src="https://cdn.mindrocketsapis.com/client/Latest/tooltip_add.js"></script>
+		<script src="https://cdn.mindrocketsapis.com/client/Latest/mr_advwinr1.js"></script>
+		<script src="https://cdn.mindrocketsapis.com/client/mm/integrator.js"></script>
+
+		<script src="https://cdn.mindrocketsapis.com/client/Latest/mrmegapack.bundle.js"></script>
+		<script src="https://cdn.mindrocketsapis.com/client/MRUAP/mm/integrator-uap.js"></script>
+		
+	<script>
+		$(document).ready(function () {
+			  getContent(4);
+
+			// عند الضغط على تبويب رئيسي
+			$('.tab-on-top li').on('click', function (e) {
+				e.preventDefault();
+				$(".tab-on-top li").removeClass("active");
+				$(this).addClass("active");
+
+				let parentId = $(this).attr("idstr");
+
+				var href = $(this).find('a').attr('href');
+				  if (href && href !== '#') {
+			window.location.href = href;  // navigate to the URL
+		} else {
+
+				$.ajax({
+					url: '/MM/GetSubCards',
+					type: 'GET',
+					data: { id: parentId },
+					success: function (result) {
+						$('.sidebar-tab').html(result);
+					},
+					error: function () {
+						alert("حدث خطأ أثناء تحميل القوائم الفرعية.");
+					}
+				});
+				if (parentId == 1)
+					getContent(4);
+				else if (parentId == 2)
+					getContent(51);
+		}
+			});
+
+			// عند الضغط على عنصر فرعي
+			$(document).on('click', '.sidebar-tab a', function (e) {
+				e.preventDefault();
+				const subId = $(this).data("subid");
+				const mainId = $(this).data("mainid");
+				//alert (subId);
+				getContent(subId);
+				//history.pushState({}, '', '/MM/Index?id=${mainId}&sub=${subId}');
+				$('.sidebar-tab ul li').removeClass('active');
+				$(this).closest("li").addClass("active");
+			});
+			function getContent (subId)
+			{
+				//alert ('ok');
+				//alert (subId);
+				$.ajax({
+					url: '/MM/GetSubContent',
+					type: 'GET',
+					data: { id:subId },
+					success: function (data) {
+						$("#Pages_Left").html(data);
+					},
+					error: function () {
+						alert("حدث خطأ أثناء تحميل المحتوى.");
+					}
+				});
+
+
+			}
+
+		});
+	</script>
+
+	</div>
+</body>
+</html>
